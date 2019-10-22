@@ -45,6 +45,7 @@ flutter:
    - assets/images/bg_pattern.svg
    - assets/images/drawable-xxxhdpi/bg_pattern.png
    - assets/images/drawable-xxxhdpi/logo_pingpay.png
+   - assets/images/drawable-xxxhdpi/graphic_wallet_done.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see

@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import './providers/color_custom.dart';
+
 import './pages/welcome_page.dart';
+import './pages/create_wallet_page.dart';
+import './pages/wallet_ready_page.dart';
 
 void main() => runApp(PingPay());
 
@@ -12,10 +16,19 @@ class PingPay extends StatelessWidget {
     return MaterialApp(
       title: 'PingPay',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: MaterialColor(0xFF06b3e9, colorCustom(6, 179, 233)),
+        // primaryColor:  Color(0xff06b3e9),
+        // textTheme: TextTheme(
+        //   //default text style
+        //   body1: TextStyle(color: Color(0xFFFFFFFF)),
+        // ),
+        // accentColor: Colors.red,
+        primaryTextTheme: Typography(platform: TargetPlatform.iOS).white,
+        textTheme: Typography(platform: TargetPlatform.iOS).white,
       ),
-      home: WelcomePage(),
+      // home: WelcomePage(),
+      // home: CreateWalletPage(),
+      home: WalletReadyPage(),
     );
   }
 }
-
