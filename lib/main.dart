@@ -12,7 +12,7 @@ class PingPay extends StatelessWidget {
     return MaterialApp(
       title: 'PingPay',
       theme: ThemeData(
-        primarySwatch: Colors.blue[300],
+        primarySwatch: Colors.blue,
       ),
       home: WelcomePage(),
     );
