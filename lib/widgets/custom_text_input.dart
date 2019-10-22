@@ -15,26 +15,27 @@ class CustomTextInput extends StatefulWidget {
 }
 
 class _CustomTextInputState extends State<CustomTextInput> {
-  FocusNode _focusNode;
+  // FocusNode _focusNode;
+  bool _showPassword = false;
 
-  @override
-  void dispose() {
-    super.dispose();
-    _focusNode.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   super.dispose();
+  //   _focusNode.dispose();
+  // }
 
-  @override
-  void initState() {
-    super.initState();
-    _focusNode = new FocusNode();
-    _focusNode.addListener(_onOnFocusNodeEvent);
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   _focusNode = new FocusNode();
+  //   _focusNode.addListener(_onOnFocusNodeEvent);
+  // }
 
-  _onOnFocusNodeEvent() {
-    setState(() {
-      // Re-renders
-    });
-  }
+  // _onOnFocusNodeEvent() {
+  //   setState(() {
+  //     // Re-renders
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -52,14 +53,22 @@ class _CustomTextInputState extends State<CustomTextInput> {
         ),
         const SizedBox(height: 8),
         TextFormField(
-          focusNode: _focusNode,
+          // focusNode: _focusNode,
+          obscureText: !_showPassword,
           keyboardType: TextInputType.text,
           decoration: InputDecoration(
             contentPadding:
                 new EdgeInsets.only(top: 11.0, bottom: 11.0, left: 16),
-            suffixIcon: Icon(
-              _focusNode.hasFocus ? Icons.visibility : Icons.visibility_off,
-              color:_focusNode.hasFocus ?Color(0xff06b3e9): Color(0xffececec),
+            suffixIcon: GestureDetector(
+              onTap: () {
+                setState(() {
+                  _showPassword = !_showPassword;
+                });
+              },
+              child: Icon(
+                _showPassword ? Icons.visibility : Icons.visibility_off,
+                color: _showPassword ? Color(0xff06b3e9) : Color(0xffececec),
+              ),
             ),
             border: OutlineInputBorder(
               borderSide: BorderSide(color: Color(0xffececec), width: 0.0),

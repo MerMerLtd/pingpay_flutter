@@ -31,9 +31,8 @@ class RoundRadiusButton extends StatelessWidget {
       elevation: 0,
       highlightElevation: 0,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(22.0),
-        side: BorderSide(color: enableBorder ? textColor : color)
-      ),
+          borderRadius: BorderRadius.circular(22.0),
+          side: enableBorder ? BorderSide(color: textColor) : BorderSide.none),
       color: color,
       child: SizedBox(
         width: width != null ? width : 200,
