@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="245px" viewBox="0 0 360 245" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>F127F00A-A1F1-4FD8-95F7-0BB47A0D0594</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-13.2%" y="-26.3%" width="126.4%" height="152.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="94.1450936%" y1="34.3639964%" x2="21.0921973%" y2="92.8858832%" id="linearGradient-2">
+            <stop stop-color="#058CD3" offset="0%"></stop>
+            <stop stop-color="#058CD3" offset="0%"></stop>
+            <stop stop-color="#0266C0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Phase_C" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wallet_already" transform="translate(0.000000, -61.000000)">
+            <rect fill="#F7F8F9" x="0" y="0" width="360" height="640"></rect>
+            <g id="status-bar" transform="translate(-16.000000, 61.000000)">
+                <g id="graphic_wallet_done">
+                    <g id="Stage" transform="translate(0.000000, 32.000000)">
+                        <g id="Artboard_Isometric">
+                            <polygon id="Artboard_Left_Isometric" fill="#CED9DB" points="196.5 213 0 114.692308 0 98.3076923 196.5 196.615385"></polygon>
+                            <polygon id="Artboard_Right_Isometric" fill="#E0EDEF" points="196.5 213 393 114.692308 393 98.3076923 196.5 196.615385"></polygon>
+                            <polygon id="Artboard_Top_Isometric" fill="#F2FDFF" points="0 98.3076923 196.5 0 393 98.3076923 196.5 196.615385"></polygon>
+                        </g>
+                    </g>
+                    <g id="cylinder" transform="translate(56.000000, 0.000000)">
+                        <polygon id="Artboard_Left_Isometric" fill="#0AD8FC" points="9 122 0 117.481481 0 4.51851852 9 9.03703704"></polygon>
+                        <polygon id="Artboard_Right_Isometric" fill="#2FE0FF" points="9 122 18 117.481481 18 4.51851852 9 9.03703704"></polygon>
+                        <polygon id="Artboard_Top_Isometric" fill="#91EFFF" points="0 4.51851852 9 0 18 4.51851852 9 9.03703704"></polygon>
+                    </g>
+                    <g id="cylinder" transform="translate(220.000000, 2.000000)">
+                        <polygon id="Artboard_Left_Isometric" fill="#A6F0FC" points="9 67 0 62.4814815 0 4.48148148 9 9"></polygon>
+                        <polygon id="Artboard_Right_Isometric" fill="#BEF6FF" points="9 67 18 62.4814815 18 4.48148148 9 9"></polygon>
+                        <polygon id="Artboard_Top_Isometric" fill="#D8F9FF" points="0 4.51851852 9 0 18 4.51851852 9 9.03703704"></polygon>
+                    </g>
+                    <g id="wallet" transform="translate(82.000000, 25.000000)">
+                        <g id="Artboard_Isometric">
+                            <path d="M0,95.2307692 L113.842978,38.4469432 C114.407076,38.165576 115.070986,38.165576 115.635085,38.4469432 L225.891439,93.4417947 C226.881525,93.9356404 227.282971,95.1369327 226.788095,96.124956 C226.594133,96.5122013 226.279493,96.8261862 225.891439,97.0197438 L114.739031,152.461538 L0,95.2307692 Z" id="Artboard_Top_Isometric" fill="#06B3E9" opacity="0.299832589" filter="url(#filter-1)"></path>
+                            <path d="M226.99769,79 C226.997923,79.3004561 226.930198,79.6055439 226.78697,79.8926954 C226.593226,80.2811226 226.278373,80.5959753 225.889946,80.7897192 L114.739031,136.230769 L0,79 L10.0242433,74 L114.739031,126.230769 L216,75.722733 L216,69 L227,69 L227,79 L226.99769,79 Z" id="Combined-Shape" fill="#058CD3"></path>
+                            <path d="M226.99769,69 C226.997923,69.3004561 226.930198,69.6055439 226.78697,69.8926954 C226.593226,70.2811226 226.278373,70.5959753 225.889946,70.7897192 L114.739031,126.230769 L0,69 L10.0242433,64 L114.739031,116.230769 L216,65.722733 L216,59 L227,59 L227,69 L226.99769,69 Z" id="Combined-Shape" fill="#0266C0"></path>
+                            <path d="M226.99769,67 C226.997923,67.3004561 226.930198,67.6055439 226.78697,67.8926954 C226.593226,68.2811226 226.278373,68.5959753 225.889946,68.7897192 L114.739031,124.230769 L0,67 L10.0242433,62 L114.739031,114.230769 L216,63.722733 L216,57 L227,57 L227,67 L226.99769,67 Z" id="Combined-Shape" fill="#058CD3"></path>
+                            <path d="M0,57.2307692 L113.842978,0.446943223 C114.407076,0.165575959 115.070986,0.165575959 115.635085,0.446943223 L225.891439,55.4417947 C226.881525,55.9356404 227.282971,57.1369327 226.788095,58.124956 C226.594133,58.5122013 226.279493,58.8261862 225.891439,59.0197438 L114.739031,114.461538 L0,57.2307692 Z" id="Artboard_Top_Isometric" fill="#06B3E9"></path>
+                            <polygon id="Artboard_Left_Isometric" fill="#0266C0" points="114.5 136 0 78.7692308 0 57.2307692 114.5 114.461538"></polygon>
+                        </g>
+                        <g id="Artboard_Isometric-Copy" transform="translate(138.000000, 21.000000)">
+                            <path d="M37.5507097,9.33183407 L40,8.10685805 L40,10.4912281 L39.9309112,10.5257818 L40,10.5604378 L19.4264489,20.8074736 C14.2958251,23.3628752 8.26164718,23.3543108 3.13829787,20.7843557 C0.89168337,19.6574174 -0.0159935438,16.9226125 1.11094474,14.675998 C1.5526262,13.7954813 2.26808626,13.0820493 3.14985315,12.6428691 L23.7234043,2.39583333 L37.5507097,9.33183407 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+                            <path d="M3.14985315,10.2470357 L23.7234043,0 L40,8.16460452 L19.4264489,18.4116403 C14.2958251,20.9670419 8.26164718,20.9584775 3.13829787,18.3885224 L3.13829787,18.3885224 C0.89168337,17.2615841 -0.0159935438,14.5267792 1.11094474,12.2801647 C1.5526262,11.399648 2.26808626,10.686216 3.14985315,10.2470357 Z" id="Artboard_Top_Isometric" fill="#06B3E9"></path>
+                            <path d="M6.93085106,12.4283652 L6.93085106,12.4283652 C9.40535111,11.1948434 12.3162349,11.1984794 14.7876457,12.4381791 L15.0740564,12.5818474 C16.1582925,13.1257178 16.5963454,14.4455588 16.052475,15.5297949 C15.8394303,15.9545114 15.4943964,16.2986844 15.0691489,16.5106674 L15.0691489,16.5106674 C12.5946489,17.7441892 9.68376505,17.7405532 7.21235432,16.5008535 L6.92594356,16.3571852 C5.84170753,15.8133148 5.40365462,14.4934738 5.947525,13.4092377 C6.1605697,12.9845212 6.50560365,12.6403482 6.93085106,12.4283652 Z" id="Artboard_Top_Isometric" fill="#2FE0FF"></path>
+                        </g>
+                    </g>
+                    <g id="cylinder-copy-2" transform="translate(109.000000, 105.000000)">
+                        <polygon id="Artboard_Left_Isometric" fill="#A6F0FC" points="9 67 0 62.4814815 0 4.48148148 9 9"></polygon>
+                        <polygon id="Artboard_Right_Isometric" fill="#BEF6FF" points="9 67 18 62.4814815 18 4.48148148 9 9"></polygon>
+                        <polygon id="Artboard_Top_Isometric" fill="#D8F9FF" points="0 4.51851852 9 0 18 4.51851852 9 9.03703704"></polygon>
+                    </g>
+                    <g id="Group-3" transform="translate(179.000000, 172.000000)">
+                        <g id="cylinder">
+                            <polygon id="Artboard_Left_Isometric" fill="#0AD8FC" points="9 43 0 38.4814815 0 4.48148148 9 9"></polygon>
+                            <polygon id="Artboard_Right_Isometric" fill="#2FE0FF" points="9 43 18 38.4814815 18 4.48148148 9 9"></polygon>
+                            <polygon id="Artboard_Top_Isometric" fill="#91EFFF" points="0 4.51851852 9 0 18 4.51851852 9 9.03703704"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-3-Copy" transform="translate(314.000000, 84.000000)">
+                        <g id="cylinder">
+                            <polygon id="Artboard_Left_Isometric" fill="#0AD8FC" points="9 43 0 38.4814815 0 4.48148148 9 9"></polygon>
+                            <polygon id="Artboard_Right_Isometric" fill="#2FE0FF" points="9 43 18 38.4814815 18 4.48148148 9 9"></polygon>
+                            <polygon id="Artboard_Top_Isometric" fill="#91EFFF" points="0 4.51851852 9 0 18 4.51851852 9 9.03703704"></polygon>
+                        </g>
+                    </g>
+                    <g id="cylinder-copy" transform="translate(267.000000, 155.000000)">
+                        <polygon id="Artboard_Left_Isometric" fill="#A6F0FC" points="9 23 0 18.4814815 0 4.48148148 9 9"></polygon>
+                        <polygon id="Artboard_Right_Isometric" fill="#BEF6FF" points="9 23 18 18.4814815 18 4.48148148 9 9"></polygon>
+                        <polygon id="Artboard_Top_Isometric" fill="#D8F9FF" points="0 4.51851852 9 0 18 4.51851852 9 9.03703704"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="199px" height="104px" viewBox="0 0 199 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>FDBFDE4C-04A0-4908-9761-CBE57A576C40</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-6.8%" y="-11.8%" width="113.7%" height="137.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.300469882 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="68.384045%" y1="97.5818593%" x2="99.6730876%" y2="40.1781466%" id="linearGradient-2">
+            <stop stop-color="#0165BF" offset="0%"></stop>
+            <stop stop-color="#058CD3" offset="59.0205022%"></stop>
+            <stop stop-color="#0165BF" offset="83.1737717%"></stop>
+            <stop stop-color="#0165BF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="24.7497559%" y1="28.9961323%" x2="50%" y2="87.2777962%" id="linearGradient-3">
+            <stop stop-color="#0EDAF6" offset="0%"></stop>
+            <stop stop-color="#4DE5FA" offset="47.484646%"></stop>
+            <stop stop-color="#06B3E9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="70.2275221%" x2="50%" y2="21.3339799%" id="linearGradient-4">
+            <stop stop-color="#0CC0EB" offset="0%"></stop>
+            <stop stop-color="#058CD3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Phase_C" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Phase-C_Welcome_page(read-policy)" transform="translate(-73.000000, -126.000000)">
+            <g id="logo_pingpay" filter="url(#filter-1)" transform="translate(81.000000, 130.000000)">
+                <g id="Group-6-Copy-5">
+                    <path d="M2.20845238,34.2923666 L22.1840918,24.3220402 C23.3088302,23.760656 24.6327045,23.760656 25.7574429,24.3220402 L40.7948327,31.8275663 C42.7683399,32.8125917 43.5682618,35.2081542 42.5815082,37.178205 C42.1949248,37.9500175 41.5679994,38.5758449 40.7948327,38.9617512 L26.1792197,46.2567583 C24.8257342,46.9323157 23.9707674,48.3132583 23.9707674,49.8238507 L23.9707674,68.0613684 C23.9707674,69.1626603 23.0764275,70.0554337 21.9732034,70.0554337 C21.6630914,70.0554337 21.3572383,69.983358 21.0798657,69.8449146 L1.10422619,59.8745882 C0.427483431,59.5368095 0,58.8463382 0,58.091042 L0,37.859459 C0,36.3488666 0.854966862,34.967924 2.20845238,34.2923666 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+                    <path d="M25.2910063,46.7703891 C26.2868916,46.2823678 26.9725839,45.2586952 26.9725839,44.0748705 L26.9725839,25.2244517 C26.9725839,24.0418576 26.2778376,22.9696049 25.1984859,22.4863567 L3.06696347,12.5776149 C2.80987589,12.4625114 2.53137408,12.4030116 2.24969549,12.4030116 C1.14512599,12.4030116 0.249695493,13.2984421 0.249695493,14.4030116 L0.249695493,13.9677302 C0.249695493,12.451632 1.10683468,11.0658378 2.46334892,10.3887686 L22.4341163,0.420873965 C23.5588554,-0.140510607 24.8820703,-0.140510607 26.0068094,0.420873965 L45.9775768,10.3887686 C47.334091,11.0658378 48.1912302,12.451632 48.1912302,13.9677302 L48.1912302,32.9483667 C48.1912302,34.4644648 47.334091,35.8502591 45.9775768,36.5273283 L26.0068094,46.4952229 C25.7754545,46.6106977 25.5357019,46.7024198 25.2910063,46.7703891 Z" id="Combined-Shape-Copy-10" fill="url(#linearGradient-3)"></path>
+                    <path d="M0.249695493,32.9730376 L0.249695493,14.7062315 C0.249695493,13.6049396 1.14403534,12.7121662 2.24725944,12.7121662 C2.52903539,12.7121662 2.80762341,12.7716753 3.06472447,12.8867848 L23.7347833,22.1411991 L1.04613193,33.4656481 C0.774070633,33.6014405 0.443439887,33.4909728 0.307647492,33.2189115 C0.269534993,33.1425527 0.249695493,33.0583794 0.249695493,32.9730376 C0.249695493,32.9730376 0.249695493,32.9730376 0.249695493,32.9730376 Z" id="Combined-Shape-Copy-12" fill="url(#linearGradient-4)"></path>
+                </g>
+                <text id="PingPay" font-family="TitilliumWeb-Bold, Titillium Web" font-size="36" font-weight="bold" line-spacing="36" letter-spacing="2" fill="#FFFFFF">
+                    <tspan x="37.6484044" y="79.9494696">PingPay</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
