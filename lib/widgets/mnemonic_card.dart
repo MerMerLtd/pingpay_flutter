@@ -1,9 +1,63 @@
 import 'package:flutter/material.dart';
+import 'package:pingpay_flutter/providers/ping_pay_icons_icons.dart';
 import 'package:pingpay_flutter/widgets/hint_text_container.dart';
 
 import '../widgets/round_radius_button.dart';
+import '../providers/ping_pay_icons_icons.dart';
 
 class MnemonicCard extends StatelessWidget {
+
+  void _showDialog(context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text(
+            "請勿截圖",
+            style: TextStyle(
+              color: Color(0xde000000),
+              fontSize: 20,
+            ),
+          ),
+          content: Container(
+            height: MediaQuery.of(context).size.height * .15,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "擁有助記詞的任何人都可以取得或使用您的資產！請在紙上寫下並保證安全",
+                  style: TextStyle(
+                    color: Color(0x8a000000),
+                    fontSize: 14,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Icon(
+                  PingPayIcons.screenshot,
+                  size: 40,
+                  // color: Colors.red,
+                ),
+              ],
+            ),
+          ),
+          actions: <Widget>[
+            FlatButton(
+              child: Text(
+                "我瞭解了",
+                style: TextStyle(
+                  color: Color(0xff058cd3),
+                  fontSize: 14,
+                ),
+              ),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -42,7 +96,9 @@ class MnemonicCard extends StatelessWidget {
             // ++
             Spacer(),
             RoundRadiusButton(
-              onPressed: () {},
+              onPressed: () {
+                _showDialog(context);
+              },
               label: '下一步',
               color: Color(0xff06b3e9),
               textColor: Color(0xffffffff),

@@ -17,8 +17,8 @@ class WalletCreatePage extends StatelessWidget {
           ),
         ),
       ),
-      // body: MnemonicCard(),
-      body: PasswordSettingCard(),
+      body: MnemonicCard(),
+      // body: PasswordSettingCard(),
     );
   }
 }
