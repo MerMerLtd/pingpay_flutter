@@ -4,8 +4,9 @@ import 'package:provider/provider.dart';
 import './providers/color_custom.dart';
 
 import './pages/welcome_page.dart';
-import './pages/create_wallet_page.dart';
+import './pages/wallet_create_page.dart';
 import './pages/wallet_ready_page.dart';
+import './pages/wallet_page.dart';
 
 void main() => runApp(PingPay());
 
@@ -27,8 +28,9 @@ class PingPay extends StatelessWidget {
         textTheme: Typography(platform: TargetPlatform.iOS).white,
       ),
       // home: WelcomePage(),
-      home: CreateWalletPage(),
+      // home: WalletCreatePage(),
       // home: WalletReadyPage(),
+      home: WalletPage(),
     );
   }
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../widgets/round_radius_button.dart';
 
-class MenonicCard extends StatelessWidget {
+class MnemonicMemorize extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(

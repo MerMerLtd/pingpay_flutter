@@ -13,6 +13,7 @@ class _WelcomePageState extends State<WelcomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final _deviceData = MediaQuery.of(context).size;
     return Scaffold(
       body: Stack(
         fit: StackFit.expand,
@@ -43,7 +44,7 @@ class _WelcomePageState extends State<WelcomePage> {
           Flex(
             direction: Axis.vertical,
             children: <Widget>[
-              const SizedBox(height: 130),
+              SizedBox(height: _deviceData.height*0.25),//130),
               Container(
                 height: 85,
                 width: 205,
@@ -85,7 +86,7 @@ class _WelcomePageState extends State<WelcomePage> {
                 disabledColor: Color(0x802fe0ff),
                 disabledTextColor: Color(0x80ffffff),
               ),
-              const SizedBox(height: 108),
+              Spacer(),
               Container(
                 width: 320,
                 height: 44,
@@ -161,6 +162,7 @@ class _WelcomePageState extends State<WelcomePage> {
               //     ),
               //   ),
               // ),
+              const SizedBox(height: 24),
             ],
           ),
         ],

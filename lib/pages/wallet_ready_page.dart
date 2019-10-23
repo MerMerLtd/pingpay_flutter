@@ -6,6 +6,7 @@ import '../widgets/round_radius_button.dart';
 class WalletReadyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final _deviceData = MediaQuery.of(context).size;
     return Scaffold(
       body: Stack(
         fit: StackFit.expand,
@@ -36,7 +37,7 @@ class WalletReadyPage extends StatelessWidget {
           Flex(
             direction: Axis.vertical,
             children: <Widget>[
-              const SizedBox(height: 130),
+               SizedBox(height: _deviceData.height*0.25),//130),
               Container(
                 height: 245,
                 width: 360,

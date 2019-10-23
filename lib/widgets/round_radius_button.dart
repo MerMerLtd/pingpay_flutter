@@ -8,17 +8,22 @@ class RoundRadiusButton extends StatelessWidget {
   final Function onPressed;
   final String label;
   final double width;
+  final double height;
   final bool enableBorder;
+  final Widget child;
 
-  RoundRadiusButton(
-      {@required this.color,
-      @required this.textColor,
-      @required this.disabledColor,
-      @required this.disabledTextColor,
-      @required this.onPressed,
-      @required this.label,
-      this.enableBorder = false,
-      this.width});
+  RoundRadiusButton({
+    @required this.color,
+    @required this.textColor,
+    this.disabledColor,
+    this.disabledTextColor,
+    @required this.onPressed,
+    this.label,
+    this.enableBorder = false,
+    this.child,
+    this.height,
+    this.width,
+  });
   @override
   Widget build(BuildContext context) {
     return RaisedButton(
@@ -36,10 +41,11 @@ class RoundRadiusButton extends StatelessWidget {
       color: color,
       child: SizedBox(
         width: width != null ? width : 200,
+        height: height != null ? height : 44,
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 9, horizontal: 0),
           child: Center(
-            child: Text(
+            child: child != null? child: Text(
               label,
               style: TextStyle(
                 fontSize: 18,
