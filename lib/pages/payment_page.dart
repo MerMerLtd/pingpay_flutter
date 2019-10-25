@@ -54,7 +54,7 @@ class _PaymentPageState extends State<PaymentPage> {
                 label: '現有餘額',
                 textContent: '0.38 ETH',
               ),
-              const SizedBox(height: 16),
+              // const SizedBox(height: 16),
               CustomTextInput(
                 labelText: '金額',
                 hintText: '輸入收款金額',

@@ -45,6 +45,7 @@ class TextBar extends StatelessWidget {
               // fontFamily:
             ),
           ),
+          padding: EdgeInsets.only(bottom: 16),
         ),
       ],
     );
