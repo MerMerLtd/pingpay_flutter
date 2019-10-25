@@ -46,10 +46,10 @@ class PingPay extends StatelessWidget {
             'title': '地址',
             'content': '0x70e9e8beB95fb97f9a38b0x70e9e8beB95fb97f9a38b',
           },
-          {
-            'title': '品名',
-            'content': '孔雀泡芙 - 阿華田泡芙',
-          },
+          // {
+          //   'title': '品名',
+          //   'content': '孔雀泡芙 - 阿華田泡芙',
+          // },
           {
             'title': '現有餘額',
             'content': '0.38 ETH',
