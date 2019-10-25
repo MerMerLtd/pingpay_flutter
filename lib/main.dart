@@ -33,8 +33,8 @@ class PingPay extends StatelessWidget {
       // home: WalletCreatePage(),
       // home: WalletReadyPage(),
       // home: WalletPage(),
-      home: RecepitsPage(coinType: 'ETH', address: '0x283740399B3c7823DB0A44327a590E2A26Af799a',),
-      // home: PaymentPage(),
+      // home: RecepitsPage(coinType: 'ETH', address: '0x283740399B3c7823DB0A44327a590E2A26Af799a',),
+      home: PaymentPage(coinType: 'ETH'),
     );
   }
 }

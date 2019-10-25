@@ -1,28 +1,42 @@
 import 'package:flutter/material.dart';
 
-class CustomTextInput extends StatefulWidget {
+class CustomIconInput extends StatefulWidget {
   final String labelText;
   final String hintText;
-  final TextInputType keyboardType;
-  final TextEditingController controller;
-  final Function onChanged;
-  final Function onEditingComplete;
+  final Icon suffixIcon;
+  final bool obscure;
 
-  const CustomTextInput({
-    Key key,
-    this.labelText,
-    this.hintText,
-    this.keyboardType,
-    this.controller,
-    this.onChanged,
-    this.onEditingComplete,
-  }) : super(key: key);
+  const CustomIconInput(
+      {Key key, this.labelText, this.hintText, this.obscure, this.suffixIcon})
+      : super(key: key);
 
   @override
-  _CustomTextInputState createState() => _CustomTextInputState();
+  _CustomIconInputState createState() => _CustomIconInputState();
 }
 
-class _CustomTextInputState extends State<CustomTextInput> {
+class _CustomIconInputState extends State<CustomIconInput> {
+  // FocusNode _focusNode;
+  bool _showPassword = false;
+
+  // @override
+  // void dispose() {
+  //   super.dispose();
+  //   _focusNode.dispose();
+  // }
+
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   _focusNode = new FocusNode();
+  //   _focusNode.addListener(_onOnFocusNodeEvent);
+  // }
+
+  // _onOnFocusNodeEvent() {
+  //   setState(() {
+  //     // Re-renders
+  //   });
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -40,15 +54,25 @@ class _CustomTextInputState extends State<CustomTextInput> {
         const SizedBox(height: 8),
         TextFormField(
           // focusNode: _focusNode,
-          onChanged: widget.onChanged,
-          onEditingComplete: widget.onEditingComplete,
-          controller: widget.controller,
-          keyboardType: widget.keyboardType,
+          obscureText: !_showPassword & widget.obscure,
+          keyboardType: TextInputType.text,
           decoration: InputDecoration(
             contentPadding:
-                EdgeInsets.only(top: 16.0, bottom: 16.0, left: 16),
-                // EdgeInsets.only(top: 11.0, bottom: 11.0, left: 16), --
-
+                new EdgeInsets.only(top: 11.0, bottom: 11.0, left: 16),
+            suffixIcon: widget.obscure
+                ? GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        _showPassword = !_showPassword;
+                      });
+                    },
+                    child: Icon(
+                      _showPassword ? Icons.visibility : Icons.visibility_off,
+                      color:
+                          _showPassword ? Color(0xff06b3e9) : Color(0xffececec),
+                    ),
+                  )
+                : widget.suffixIcon,
             border: OutlineInputBorder(
               borderSide: BorderSide(color: Color(0xffececec), width: 0.0),
             ),

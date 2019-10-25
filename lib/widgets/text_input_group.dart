@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/round_radius_button.dart';
-import '../widgets/custom_text_input.dart';
+import '../widgets/custom_icon_input.dart';
 
 class TextInputGroup extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
@@ -14,13 +14,13 @@ class TextInputGroup extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            CustomTextInput(
+            CustomIconInput(
               labelText: 'Keystore 密碼',
               hintText: '8~20個字元，至少各一個英文數字',
               obscure: true,
             ),
             const SizedBox(height: 16),
-            CustomTextInput(
+            CustomIconInput(
               labelText: '再次確認密碼',
               hintText: 'key-in password again',
               obscure: true,
