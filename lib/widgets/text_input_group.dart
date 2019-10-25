@@ -17,11 +17,13 @@ class TextInputGroup extends StatelessWidget {
             CustomTextInput(
               labelText: 'Keystore 密碼',
               hintText: '8~20個字元，至少各一個英文數字',
+              obscure: true,
             ),
             const SizedBox(height: 16),
             CustomTextInput(
               labelText: '再次確認密碼',
               hintText: 'key-in password again',
+              obscure: true,
             ),
             // const SizedBox(height: 170),
             Spacer(),

@@ -7,6 +7,8 @@ import './pages/welcome_page.dart';
 import './pages/wallet_create_page.dart';
 import './pages/wallet_ready_page.dart';
 import './pages/wallet_page.dart';
+import './pages/payment_page.dart';
+import './pages/recepits_page.dart';
 
 void main() => runApp(PingPay());
 
@@ -28,9 +30,11 @@ class PingPay extends StatelessWidget {
         textTheme: Typography(platform: TargetPlatform.iOS).white,
       ),
       // home: WelcomePage(),
-      home: WalletCreatePage(),
+      // home: WalletCreatePage(),
       // home: WalletReadyPage(),
       // home: WalletPage(),
+      home: RecepitsPage(coinType: 'ETH', address: '0x283740399B3c7823DB0A44327a590E2A26Af799a',),
+      // home: PaymentPage(),
     );
   }
 }

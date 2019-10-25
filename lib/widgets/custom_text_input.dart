@@ -3,12 +3,10 @@ import 'package:flutter/material.dart';
 class CustomTextInput extends StatefulWidget {
   final String labelText;
   final String hintText;
+  final bool obscure;
 
-  const CustomTextInput({
-    Key key,
-    this.labelText,
-    this.hintText,
-  }) : super(key: key);
+  const CustomTextInput({Key key, this.labelText, this.hintText, this.obscure})
+      : super(key: key);
 
   @override
   _CustomTextInputState createState() => _CustomTextInputState();
@@ -54,7 +52,7 @@ class _CustomTextInputState extends State<CustomTextInput> {
         const SizedBox(height: 8),
         TextFormField(
           // focusNode: _focusNode,
-          obscureText: !_showPassword,
+          obscureText: !_showPassword & widget.obscure,
           keyboardType: TextInputType.text,
           decoration: InputDecoration(
             contentPadding:
@@ -92,12 +90,12 @@ class _CustomTextInputState extends State<CustomTextInput> {
             fontSize: 11,
             letterSpacing: 0.4,
           ),
-          validator: (value) {
-            if (value.isEmpty) {
-              return 'Please enter some text';
-            }
-            return null;
-          },
+          // validator: (value) {
+          //   if (value.isEmpty) {
+          //     return 'Please enter some text';
+          //   }
+          //   return null;
+          // },
         ),
       ],
     );

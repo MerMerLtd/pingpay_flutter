@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../widgets/mnemonic_card.dart';
 import '../widgets/password_setting_card.dart';
 
-class WalletCreatePage extends StatelessWidget {
+class PaymentPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,8 +17,8 @@ class WalletCreatePage extends StatelessWidget {
           ),
         ),
       ),
-      // body: MnemonicCard(),
-      body: PasswordSettingCard(),
+      body: MnemonicCard(),
+      // body: PasswordSettingCard(),
     );
   }
 }
