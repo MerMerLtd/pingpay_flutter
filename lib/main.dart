@@ -28,9 +28,9 @@ class PingPay extends StatelessWidget {
         textTheme: Typography(platform: TargetPlatform.iOS).white,
       ),
       // home: WelcomePage(),
-      // home: WalletCreatePage(),
+      home: WalletCreatePage(),
       // home: WalletReadyPage(),
-      home: WalletPage(),
+      // home: WalletPage(),
     );
   }
 }
