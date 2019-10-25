@@ -9,6 +9,7 @@ import './pages/wallet_ready_page.dart';
 import './pages/wallet_page.dart';
 import './pages/payment_page.dart';
 import './pages/recepits_page.dart';
+import './pages/transaction_preview_page.dart';
 
 void main() => runApp(PingPay());
 
@@ -34,7 +35,27 @@ class PingPay extends StatelessWidget {
       // home: WalletReadyPage(),
       // home: WalletPage(),
       // home: RecepitsPage(coinType: 'ETH', address: '0x283740399B3c7823DB0A44327a590E2A26Af799a',),
-      home: PaymentPage(coinType: 'ETH'),
+      // home: PaymentPage(coinType: 'ETH'),
+      home: TransactionPreviewPage(
+        data: [
+          {
+            'title': '發送至',
+            'content': '泰德集團員工福利 Snack bar',
+          },
+          {
+            'title': '地址',
+            'content': '0x70e9e8beB95fb97f9a38b0x70e9e8beB95fb97f9a38b',
+          },
+          {
+            'title': '品名',
+            'content': '孔雀泡芙 - 阿華田泡芙',
+          },
+          {
+            'title': '現有餘額',
+            'content': '0.38 ETH',
+          },
+        ],
+      ),
     );
   }
 }

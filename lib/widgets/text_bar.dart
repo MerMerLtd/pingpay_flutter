@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 class TextBar extends StatelessWidget {
   const TextBar({
     Key key,
-    this.label,
+    this.title,
     this.textContent,
     this.contentDecoration = TextDecoration.none,
-    this.labelDecoration = TextDecoration.none,
+    this.titleDecoration = TextDecoration.none,
   }) : super(key: key);
 
-  final String label;
+  final String title;
   final String textContent;
   final TextDecoration contentDecoration;
-  final TextDecoration labelDecoration;
+  final TextDecoration titleDecoration;
 
   @override
   Widget build(BuildContext context) {
@@ -21,12 +21,12 @@ class TextBar extends StatelessWidget {
         Container(
           alignment: Alignment.centerLeft,
           child: Text(
-            label, //'現有餘額',
+            title, //'現有餘額',
             style: TextStyle(
               color: Color(0xff06b3e9),
               fontSize: 11,
               letterSpacing: 0.49,
-              decoration: labelDecoration, //TextDecoration.underline
+              decoration: titleDecoration, //TextDecoration.underline
               // fontFamily:
             ),
           ),

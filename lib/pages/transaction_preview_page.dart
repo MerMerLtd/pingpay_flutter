@@ -1,20 +1,14 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/custom_text_input.dart';
-import '../widgets/custom_icon_input.dart';
 import '../widgets/round_radius_button.dart';
+import '../widgets/custom_text_input.dart';
 import '../widgets/text_bar.dart';
-import '../providers/ping_pay_icons_icons.dart';
 
-class PaymentPage extends StatefulWidget {
-  const PaymentPage({Key key, this.coinType}) : super(key: key);
+class TransactionPreviewPage extends StatelessWidget {
+  final List<Map<String, String>> data;
 
-  @override
-  _PaymentPageState createState() => _PaymentPageState();
-  final String coinType;
-}
+  const TransactionPreviewPage({Key key, this.data}) : super(key: key);
 
-class _PaymentPageState extends State<PaymentPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,9 +16,10 @@ class _PaymentPageState extends State<PaymentPage> {
       backgroundColor: Color(0xfff7f8f9),
       appBar: AppBar(
         title: Text(
-          "${widget.coinType} 付款",
+          "預覽交易",
           style: TextStyle(
             fontSize: 20,
+            fontWeight: FontWeight.w300
           ),
         ),
       ),
@@ -40,25 +35,8 @@ class _PaymentPageState extends State<PaymentPage> {
           padding: EdgeInsets.all(16),
           child: Column(
             children: <Widget>[
-              CustomIconInput(
-                labelText: '發送至',
-                hintText: '請輸入位址...',
-                obscure: false,
-                suffixIcon: Icon(
-                  PingPayIcons.ic_scan,
-                  size: 24,
-                ),
-              ),
-              const SizedBox(height: 16),
-              TextBar(
-                title: '現有餘額',
-                textContent: '0.38 ETH',
-              ),
-              // const SizedBox(height: 16),
-              CustomTextInput(
-                labelText: '金額',
-                hintText: '輸入收款金額',
-              ),
+              ...data.map((item) => TextBar(title:item['title'].toString(),textContent:item['content'].toString())).toList(),
+              CustomTextInput(labelText: '金額', hintText: '輸入收款金額',),
               Spacer(),
               RoundRadiusButton(
                 color: Color(0xff06b3e9),
